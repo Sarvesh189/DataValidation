@@ -1,0 +1,5 @@
+D:\Sarvesh\DataSanitization\DataSanitization\obj\Debug\DataValidation.csprojResolveAssemblyReference.cache
+D:\Sarvesh\DataSanitization\DataSanitization\bin\Debug\DataValidation.dll
+D:\Sarvesh\DataSanitization\DataSanitization\bin\Debug\DataValidation.pdb
+D:\Sarvesh\DataSanitization\DataSanitization\obj\Debug\DataValidation.dll
+D:\Sarvesh\DataSanitization\DataSanitization\obj\Debug\DataValidation.pdb

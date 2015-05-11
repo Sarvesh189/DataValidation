@@ -1,0 +1,15 @@
+D:\Sarvesh\DataSanitization\DataSanitizationConsole\bin\Release\DataSanitizationConsole.exe.config
+D:\Sarvesh\DataSanitization\DataSanitizationConsole\bin\Release\DataSanitizationConsole.exe
+D:\Sarvesh\DataSanitization\DataSanitizationConsole\bin\Release\DataSanitizationConsole.pdb
+D:\Sarvesh\DataSanitization\DataSanitizationConsole\bin\Release\DataValidationLibrary.dll
+D:\Sarvesh\DataSanitization\DataSanitizationConsole\obj\Release\DataSanitizationConsole.csprojResolveAssemblyReference.cache
+D:\Sarvesh\DataSanitization\DataSanitizationConsole\obj\Release\DataSanitizationConsole.exe
+D:\Sarvesh\DataSanitization\DataSanitizationConsole\obj\Release\DataSanitizationConsole.pdb
+E:\Sarvesh-GitHub\sarvesh-dotnet-applications\DataSanitization\DataSanitizationConsole\bin\Release\DataSanitizationConsole.exe.config
+E:\Sarvesh-GitHub\sarvesh-dotnet-applications\DataSanitization\DataSanitizationConsole\bin\Release\DataSanitizationConsole.exe
+E:\Sarvesh-GitHub\sarvesh-dotnet-applications\DataSanitization\DataSanitizationConsole\bin\Release\DataSanitizationConsole.pdb
+E:\Sarvesh-GitHub\sarvesh-dotnet-applications\DataSanitization\DataSanitizationConsole\bin\Release\DataValidationLibrary.dll
+E:\Sarvesh-GitHub\sarvesh-dotnet-applications\DataSanitization\DataSanitizationConsole\bin\Release\DataValidationLibrary.pdb
+E:\Sarvesh-GitHub\sarvesh-dotnet-applications\DataSanitization\DataSanitizationConsole\obj\Release\DataSanitizationConsole.csprojResolveAssemblyReference.cache
+E:\Sarvesh-GitHub\sarvesh-dotnet-applications\DataSanitization\DataSanitizationConsole\obj\Release\DataSanitizationConsole.exe
+E:\Sarvesh-GitHub\sarvesh-dotnet-applications\DataSanitization\DataSanitizationConsole\obj\Release\DataSanitizationConsole.pdb
