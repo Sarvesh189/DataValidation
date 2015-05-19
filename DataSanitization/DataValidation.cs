@@ -19,6 +19,7 @@ namespace DataValidationLibrary
         private string _regexString = string.Empty;
         private Multiplicity _multiplicity = Multiplicity.ZeroOrMore;
         private bool _validateAssociatedObject = false;
+        private string propertyName = string.Empty;
         public bool ValidateRequest<T>(T request)
         {
             
@@ -49,9 +50,10 @@ namespace DataValidationLibrary
                     }
                     if (propInfo.PropertyType == typeof(String))
                     {
+                        propertyName = propInfo.Name;
                         string propValue = Convert.ToString(propInfo.GetValue(request));
                         isValidRequest = ValidateString(propValue);
-                        if (!isValidRequest) break;
+                        if (!isValidRequest) throw new Exception(string.Format("propertyName: {0} is having some invalid character.",propertyName));
                     }
                     else if (propInfo.PropertyType == typeof(IList<string>))
                     {
@@ -60,8 +62,9 @@ namespace DataValidationLibrary
                         {
                             foreach (var item in items)
                             {
+                                propertyName = propInfo.Name;
                                 isValidRequest = ValidateString(item);
-                                if (!isValidRequest) break;
+                                if (!isValidRequest) throw new Exception(string.Format("propertyName: {0} is having some invalid character." , propertyName));
                             }
                         }
                     }
@@ -69,11 +72,12 @@ namespace DataValidationLibrary
                     {
                         if (propInfo.PropertyType.Name == typeof(IList<>).Name)
                         {
+                            propertyName = propInfo.Name;
                             var items = propInfo.GetValue(request) as IList;
                             foreach (var item in items)
                             {
                                 isValidRequest = ValidateAssociatedObjects(item);
-                                if (!isValidRequest) return false;
+                                if (!isValidRequest) throw new Exception(string.Format("propertyName: {0} is having some invalid character." , propertyName));
                             }
                         }
                         else
@@ -86,6 +90,7 @@ namespace DataValidationLibrary
                             object[] args = { propInfo.GetValue(request) };
                             var result = validationMethod.Invoke(this, args);
                             isValidRequest = (bool)result;
+                            if (!isValidRequest) throw new Exception(string.Format("propertyName: {0} is having some invalid character." , propertyName));
                         }
                     }
 
@@ -130,6 +135,7 @@ namespace DataValidationLibrary
 
         private bool ValidateString(string request)
         {
+
             if (!string.IsNullOrEmpty(request))
             {
                 string specialCharacters = string.Empty;

@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="DataValidation.cs" />
     <Compile Include="IDataValidation.cs" />
+    <Compile Include="Response.cs" />
     <Compile Include="ValidationAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
