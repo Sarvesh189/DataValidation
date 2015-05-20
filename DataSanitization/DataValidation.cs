@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace DataValidationLibrary
 {
+    /// <summary>
+    /// Data Validation for special characters
+    /// </summary>
     public class DataValidation : IDataValidation
     {
         // private string _specialCharacters = @"^[a-zA-Z0-9_.,]+(-)?$";
